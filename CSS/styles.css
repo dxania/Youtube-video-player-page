@@ -1,17 +1,32 @@
 body {
-    background-color: lightgray;
+    background-color: rgb(245, 244, 244);
 }
 
 #searchBarContainer {
+    top: 0;
+    overflow: hidden;
+    width: 100%;
     display: flex;
     background-color: white;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    left: 0%;
+    color: rgb(73, 77, 80);
 }
 
 #sideBarContainer {}
 
-#mainContainer {}
+#mainContainer {
+    margin-top: 8%;
+    margin-left: 40px;
+    width: 60%
+}
+
+#mainContainer p {
+    font-size: 15px;
+    margin-left: 6%;
+}
 
 #commentsContainer {}
 
@@ -31,6 +46,107 @@ body {
 }
 
 i {
-    color: rgb(73, 77, 80);
     font-size: 20px;
+}
+
+.bar {
+    display: flex;
+    color: rgb(100, 94, 94);
+}
+
+.bar #mainleft {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.bar #mainleft h5 {
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.bar #mainright {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bar #mainright i {
+    padding: 30px;
+    /* color: rgb(124, 121, 121); */
+}
+
+#two,
+.three {
+    padding: 20px;
+}
+
+.bar2 {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.bar2 #bar2left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.bar2 img,
+.three img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.bar2 #bar2right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bar2 #sub {
+
+    color: aliceblue;
+    background-color: rgb(155, 12, 12);
+    width: 90px;
+    height: 35px;
+    border-radius: 5%;
+    border-style: none;
+
+}
+
+#showmore {
+    margin-left: 6%;
+    background-color: inherit;
+    border-style: none;
+    color: rgb(80, 81, 82);
+    font-weight: 530;
+}
+
+.bar3 {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.bar3 #txt {
+    padding-right: 30px;
+    font-weight: 500;
+}
+
+.bar3 i {
+    color: rgb(80, 81, 82);
+}
+
+hr {
+    color: rgb(223, 229, 235);
+}
+
+#duration {
+    color: rgb(80, 81, 82);
+
+}
+
+.three #comment {
+    padding-right: 50px;
 }
