@@ -1,5 +1,6 @@
 body {
     background-color: rgb(245, 244, 244);
+    font-family: 'Roboto';
 }
 
 #searchBarContainer {
@@ -15,12 +16,21 @@ body {
     color: rgb(73, 77, 80);
 }
 
-#sideBarContainer {}
+#sideBarContainer {
+    margin-right: 100px;
+    height: 100%;
+    /* top: 0; */
+    width: 30%;
+    z-index: 1;
+    float: right;
+    display: flex;
+    flex-direction: column;
+}
 
 #mainContainer {
     margin-top: 8%;
     margin-left: 40px;
-    width: 60%
+    width: 60%;
 }
 
 #mainContainer p {
@@ -28,8 +38,54 @@ body {
     margin-left: 6%;
 }
 
-#commentsContainer {}
+.video {
+    height: 720px;
+    width: 100%;  
+}
 
+.thumbnail {
+    padding-bottom: 25px;
+    display: flex;
+
+}
+
+.thumbvideo {
+
+
+}
+
+.thumbtitle {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between ;
+}
+
+ /* .thumbtitle h6 {
+   
+}  */
+
+.thumbtitle p {
+    padding-bottom: 1px;
+    color: rgb(87, 89, 90);
+}
+
+#thumbnailtitle {
+    color: black;
+    font-weight: bold;
+    font-size: large;
+}
+
+.hr {
+    padding-bottom: 20px;
+}
+/*#commentsContainer {}*/
+
+.fa-toggle-on {
+    color: blue;
+    font-size: x-large;
+
+}
 
 #logo {
     width: 70px;

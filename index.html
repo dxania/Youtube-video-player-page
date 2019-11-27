@@ -5,6 +5,7 @@
     <title>YouTube Video Player Clone</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="CSS/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 </head>
 
 <body>
@@ -25,11 +26,79 @@
                 <i class="fa fa-user-circle" aria-hidden="true"></i>
             </span>
         </section>
-        <section id="mainContainer">
-            <iframe width="780" height="450" src="https://www.youtube.com/embed/JKdTgbq8kTY" frameborder="0"
+        <aside id="sideBarContainer">
+            <span class="upnext">
+                <p>Up Next <span style="float:right;">AUTOPLAY&nbsp;<i class="fa fa-toggle-on" aria-hidden="true"></i>
+                </span></p>
+
+            </span>
+            <span class="thumbnail">
+                <iframe class="thumbvideo" src="https://www.youtube.com/embed/JKdTgbq8kTY" 
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
-            <h3>How Microverse Works</h3>
+                <span class="thumbtitle">
+                <p><span id="thumbnailtitle">How Microverse Works</span>
+                <br>Microverse<br>641 views</p>
+                </span>              
+            </span>
+            <span class="hr"><hr></span>
+            <span class="thumbnail">
+                <iframe class="thumbvideo" src="https://www.youtube.com/embed/KE0Yjp1bbiM" 
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <span class="thumbtitle">
+                <p><span id="thumbnailtitle">A Day In the Life of a Software Engineer at eBay</span>
+                <br>Product Manager<br>8,732 views</p> 
+                </span>
+            </span>
+            <span class="thumbnail">
+                <iframe class="thumbvideo" src="https://www.youtube.com/embed/ny1KKEkz-nE" 
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <span class="thumbtitle">
+                    <p><span id="thumbnailtitle">From Coding Student to Freelance Hero</span>
+                    <br>Microverse<br>700 views</p>
+                    </span>
+            </span>
+            <span class="thumbnail">
+                <iframe class="thumbvideo" src="https://www.youtube.com/embed/QHQTzeve7OM" 
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <span class="thumbtitle">
+                <p><span id="thumbnailtitle">WeWork - The $47 Billion Disaster</span>
+                <br>ColdFusion<i class="fa fa-check-circle" aria-hidden="true"></i>
+                <br>722,738 views</p> 
+                </span>
+            </span>
+            <span class="thumbnail">
+                <iframe class="thumbvideo" src="https://www.youtube.com/embed/uou_GmcXFG4"  
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <span class="thumbtitle">
+                <p><span id="thumbnailtitle">The Rise and Fall of Kraft Heinz</span>
+                <br>The Market Is Open<br>174,022 views</p>
+                </span>
+            </span>
+            <span class="thumbnail">
+            <iframe class="thumbvideo" src="https://www.youtube.com/embed/66Ck_5SePZg"  
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <span class="thumbtitle">
+            <p><span id="thumbnailtitle">36 CRAZY WAYS TO COOK EGGS</span>
+            <br>5-Minute Crafts<br>12,941,215 views</p> 
+            </span>
+            </span>
+            <span class="thumbnail">
+            <iframe class="thumbvideo" src="https://www.youtube.com/embed/6vebbDZxoKE" 
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <span class="thumbtitle">
+            <p><span id="thumbnailtitle">5 Min vs. 50 Min vs. 5 Hour Pasta (ft. Binging With Babish)</span>
+            <br>Tasty<i class="fa fa-check-circle" aria-hidden="true"></i>
+            <br>4,439,284 views</p>             
+        </span>
+            </span>
+    </aside>
+        <section id="mainContainer">
+            <iframe class="video" src="https://www.youtube.com/embed/JKdTgbq8kTY" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <h2>How Microverse Works</h2>
+        
             <span class="bar">
                 <span id="mainleft">
                     <h5>
@@ -71,8 +140,8 @@
                     Paul Omondi <span id="duration"> 1 month ago</span>
                 </span>
             </span>
+       
         </section>
-        <div id="sideBarContainer"></div>
 
         <div id="commentsContainer"></div>
     </div>
