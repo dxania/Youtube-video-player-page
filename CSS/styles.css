@@ -25,7 +25,6 @@ body {
     float: left;
     display: flex;
     vertical-align: middle;
-    /* margin-top: 0.5%; */
 }
 
 .navbar ul .navbarleft #logo {
