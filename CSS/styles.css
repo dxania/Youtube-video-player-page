@@ -21,16 +21,16 @@ body {
     display: inline-block;
 }
 
-.navbar ul .navbarleft {
+.navbar ul .navbarleft ul {
     float: left;
     display: flex;
-    margin-top: 0.5%
+    margin-top: 6%
 }
 
 .navbar ul .navbarleft #logo {
     width: 100px;
     height: 60px;
-    margin-top: -20px;
+    margin-top: -18px;
 }
 
 .navbar ul .navbarcenter {
