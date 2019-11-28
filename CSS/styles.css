@@ -24,12 +24,14 @@ body {
 .navbar ul .navbarleft {
     float: left;
     display: flex;
-    margin-top: 0.5%
+    vertical-align: middle;
+    /* margin-top: 0.5%; */
 }
 
 .navbar ul .navbarleft #logo {
-    width: 100px;
-    height: 60px;
+    width: 120px;
+    height: 80px;
+    vertical-align: middle;
     margin-top: -20px;
 }
 
