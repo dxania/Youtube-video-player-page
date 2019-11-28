@@ -1,30 +1,123 @@
 body {
-    background-color: rgb(245, 244, 244);
+    background-color: rgb(244, 246, 248);
     font-family: 'Roboto';
 }
 
-#searchBarContainer {
+.navbar {
     top: 0;
-    overflow: hidden;
     width: 100%;
-    display: flex;
     background-color: white;
-    justify-content: space-between;
-    align-items: center;
     position: fixed;
-    left: 0%;
+    left: 0;
     color: rgb(73, 77, 80);
+    height: 80px;
 }
 
-#sideBarContainer {
+.navbar ul {
+    list-style-type: none;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+.navbar ul .navbarleft {
+    float: left;
+    display: flex;
+    margin-top: 0.5%
+}
+
+.navbar ul .navbarleft #logo {
+    width: 100px;
+    height: 60px;
+    margin-top: -20px;
+}
+
+.navbar ul .navbarcenter {
+    position: absolute;
+    left: 24%;
+
+}
+
+.navbar ul .navbarright {
+    float: right;
+    margin-right: 50px;
+}
+
+.navbar ul .navbarright li {
+    padding: 10px;
+    justify-content: flex-end;
+}
+
+.navbar ul i {
+    font-size: 30px;
+    color: rgb(79, 79, 80);
+}
+
+.navbar .fa-search {
+    font-size: 20px;
+}
+
+.navbar .navbarcenter #searchbox {
+    width: 900px;
+    height: 40px;
+    border-right: 0;
+    border-radius: 4px;
+}
+
+.navbar .navbarcenter #searchbutton {
+    width: 60px;
+    height: 45px;
+    border: none;
+    border-radius: 2px;
+    background-color: rgb(239, 240, 241);
+}
+
+.navbar .navbarcenter ::placeholder {
+    padding-left: 10px;
+    font-size: 23px;
+}
+
+.sidebar {
     margin-right: 100px;
     height: 100%;
-    /* top: 0; */
     width: 30%;
     z-index: 1;
     float: right;
     display: flex;
     flex-direction: column;
+}
+
+.sidebar #autoplay {
+    float: right;
+}
+
+.thumbnail {
+    padding-bottom: 25px;
+    display: flex;
+}
+
+.thumbtitle {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    color: rgb(87, 89, 90);
+    line-height: 25px;
+}
+
+.thumbnailtitle {
+    color: black;
+    font-weight: bold;
+    font-size: large;
+}
+
+.hr {
+    padding-bottom: 20px;
+}
+
+.fa-toggle-on {
+    color: blue;
+    font-size: x-large;
 }
 
 #mainContainer {
@@ -40,134 +133,66 @@ body {
 
 .video {
     height: 720px;
-    width: 100%;  
+    width: 100%;
 }
 
-.thumbnail {
-    padding-bottom: 25px;
-    display: flex;
-
-}
-
-.thumbvideo {
-
-
-}
-
-.thumbtitle {
-    padding-left: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between ;
-}
-
- /* .thumbtitle h6 {
-   
-}  */
-
-.thumbtitle p {
-    padding-bottom: 1px;
-    color: rgb(87, 89, 90);
-}
-
-#thumbnailtitle {
-    color: black;
-    font-weight: bold;
-    font-size: large;
-}
-
-.hr {
-    padding-bottom: 20px;
-}
-/*#commentsContainer {}*/
-
-.fa-toggle-on {
-    color: blue;
-    font-size: x-large;
-
-}
-
-#logo {
-    width: 70px;
-    height: 50px;
-}
-
-#search {
-    width: 75%;
-    float: left;
-}
-
-#searchbutton {
-    width: 20%;
-}
-
-i {
-    font-size: 20px;
-}
-
-.bar {
+.aboutvideo {
     display: flex;
     color: rgb(100, 94, 94);
+    justify-content: space-between;
 }
 
-.bar #mainleft {
-    display: flex;
-    justify-content: flex-start;
-}
-
-.bar #mainleft h5 {
+.aboutvideo #aboutvideoleft h5 {
     font-size: 18px;
     font-weight: lighter;
 }
 
-.bar #mainright {
-    display: flex;
-    justify-content: flex-end;
+.aboutvideo #aboutvideoright {
+    float: right;
+    font-size: 20px;
 }
 
-.bar #mainright i {
+.aboutvideo #aboutvideoright i {
     padding: 30px;
-    /* color: rgb(124, 121, 121); */
 }
 
-#two,
-.three {
+#videodescription,
+.commentssection {
     padding: 20px;
 }
 
-.bar2 {
+.videodescriptionbar {
 
     display: flex;
     justify-content: space-between;
 }
 
-.bar2 #bar2left {
+.videodescriptionbar #videoauthor {
     display: flex;
     justify-content: flex-start;
 }
 
-.bar2 img,
-.three img {
+.videodescriptionbar img,
+.commentssection img {
     width: 40px;
     height: 40px;
     border-radius: 100%;
     margin-right: 10px;
 }
 
-.bar2 #bar2right {
+.videodescriptionbar #subscribe {
     display: flex;
     justify-content: flex-end;
 }
 
-.bar2 #sub {
-
+.videodescriptionbar #subscribebutton {
     color: aliceblue;
     background-color: rgb(155, 12, 12);
-    width: 90px;
-    height: 35px;
+    width: 95px;
+    height: 40px;
     border-radius: 5%;
     border-style: none;
-
+    font-size: 14px;
 }
 
 #showmore {
@@ -178,31 +203,28 @@ i {
     font-weight: 530;
 }
 
-.bar3 {
+.comments {
     padding: 20px;
     display: flex;
     justify-content: flex-start;
 
 }
 
-.bar3 #txt {
+.comments #txt {
     padding-right: 30px;
     font-weight: 500;
 }
 
-.bar3 i {
+.comments i {
     color: rgb(80, 81, 82);
-}
-
-hr {
-    color: rgb(223, 229, 235);
 }
 
 #duration {
     color: rgb(80, 81, 82);
-
 }
 
-.three #comment {
-    padding-right: 50px;
+#commentbox {
+    border: none;
+    background-color: inherit;
+
 }
