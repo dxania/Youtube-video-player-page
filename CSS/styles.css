@@ -164,6 +164,14 @@ body {
     padding-right: 30px;
 }
 
+.aboutvideo #aboutvideoright button{
+    background-color: inherit;
+    border: none;
+    color: rgb(100, 94, 94);
+    font-size: 14px;
+
+}
+
 #videodescription,
 .commentssection {
     padding: 20px;
