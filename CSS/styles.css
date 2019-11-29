@@ -35,8 +35,6 @@ body {
 
 .navbar ul .navbarcenter {
     position: absolute;
-    left: 24%;
-
 }
 
 .navbar ul .navbarright {
@@ -50,7 +48,7 @@ body {
 }
 
 .navbar ul i {
-    font-size: 30px;
+    font-size: 20px;
     color: rgb(79, 79, 80);
 }
 
@@ -59,7 +57,7 @@ body {
 }
 
 .navbar .navbarcenter #searchbox {
-    width: 900px;
+    width: 600px;
     height: 40px;
     border-right: 0;
     border-radius: 4px;
@@ -81,7 +79,7 @@ body {
 .sidebar {
     margin-right: 100px;
     height: 100%;
-    width: 30%;
+    width: 25%;
     z-index: 1;
     float: right;
     display: flex;
@@ -92,23 +90,30 @@ body {
     float: right;
 }
 
-.thumbnail {
-    padding-bottom: 25px;
+.sidebar .thumbnail iframe{
+    width: 50%;
+    height: 100px;
+}
+
+.sidebar .thumbnail {
+    padding-bottom: 5px;
     display: flex;
 }
 
-.thumbtitle {
+.sidebar .thumbnail .thumbtitle {
     padding-left: 20px;
     display: flex;
     flex-direction: column;
     color: rgb(87, 89, 90);
-    line-height: 25px;
+    line-height: 17px;
+    font-size: 12px;
+    width: 50%;
 }
 
-.thumbnailtitle {
+.sidebar .thumbnail .thumbnailtitle {
     color: black;
     font-weight: bold;
-    font-size: large;
+    font-size: small;
 }
 
 .hr {
@@ -122,12 +127,12 @@ body {
 
 #mainContainer {
     margin-top: 8%;
-    margin-left: 5%;
-    width: 50%;
+    margin-left: 3%;
+    width: 60%;
 }
 
 #mainContainer p {
-    font-size: 15px;
+    font-size: 10px;
     margin-left: 6%;
 }
 
@@ -140,25 +145,30 @@ body {
     display: flex;
     color: rgb(100, 94, 94);
     justify-content: space-between;
+    align-items: center;
 }
 
 .aboutvideo #aboutvideoleft h5 {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: lighter;
 }
 
 .aboutvideo #aboutvideoright {
     float: right;
-    font-size: 20px;
+    font-size: 14px;
 }
 
 .aboutvideo #aboutvideoright i {
-    padding: 30px;
+    padding-right: 30px;
 }
 
 #videodescription,
 .commentssection {
     padding: 20px;
+}
+
+#videodescription p{
+    font-size: 13px;
 }
 
 .videodescriptionbar {
