@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>YouTube Video Player Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li class="navbarleft">
+                <ul>
+                    <li><i class="fa fa-bars" aria-hidden="true"></i></li>
+                    <li><img src="images/youtube.png" alt="" id="logo"></li>
+                </ul>
+            </li>
+            <li class="navbarcenter">
+                <ul>
+                    <li>
+                        <form action="#">
+                            <input type="text" placeholder="Search" id="searchbox"><button id="searchbutton"><i
+                                    class="fa fa-search" aria-hidden="true"></i></button>
+                        </form>
+                    </li>
+                </ul>
+            </li>
+            <li class="navbarright">
+                <ul>
+                    <li><i class="fa fa-video-camera" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-th" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-bell" aria-hidden="true"></i></li>
+                    <li> <i class="fa fa-user-circle" aria-hidden="true"></i></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <aside class="sidebar">
+        <span>
+            Up Next
+            <span id="autoplay">AUTOPLAY&nbsp;<i class="fa fa-toggle-on" aria-hidden="true"></i></span>
+        </span>
+        <br>
+        <div class="thumbnail">
+            <iframe src="https://www.youtube.com/embed/JKdTgbq8kTY"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <div class="thumbtitle">
+                <p>
+                    <span class="thumbnailtitle">How Microverse Works</span>
+                    <br>Microverse<br>641 views
+                </p>
+            </div>
+        </div>
+        <div class="hr">
+            <hr>
+        </div>
+        <div class="thumbnail">
+            <iframe src="https://www.youtube.com/embed/KE0Yjp1bbiM"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <div class="thumbtitle">
+                <p>
+                    <span class="thumbnailtitle">A Day In the Life of a Software Engineer at eBay</span>
+                    <br>Product Manager<br>8,732 views
+                </p>
+
+            </div>
+        </div>
+        <div class="thumbnail">
+            <iframe src="https://www.youtube.com/embed/ny1KKEkz-nE"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <div class="thumbtitle">
+                <p>
+                    <span class="thumbnailtitle">From Coding Student to Freelance Hero</span>
+                    <br>Microverse<br>700 views
+                </p>
+            </div>
+        </div>
+        <div class="thumbnail">
+            <iframe src="https://www.youtube.com/embed/QHQTzeve7OM"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <div class="thumbtitle">
+                <p>
+                    <span class="thumbnailtitle">WeWork - The $47 Billion Disaster</span>
+                    <br>ColdFusion&nbsp;<i class="fa fa-check-circle" aria-hidden="true"></i>
+                    <br>722,738 views
+                </p>
+            </div>
+        </div>
+        <div class="thumbnail">
+            <iframe src="https://www.youtube.com/embed/uou_GmcXFG4"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <div class="thumbtitle">
+                <p>
+                    <span class="thumbnailtitle">The Rise and Fall of Kraft Heinz</span>
+                    <br>The Market Is Open<br>174,022 views
+                </p>
+            </div>
+        </div>
+
+        <div class="thumbnail">
+            <iframe src="https://www.youtube.com/embed/66Ck_5SePZg"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <div class="thumbtitle">
+                <p><span class="thumbnailtitle">36 CRAZY WAYS TO COOK EGGS</span>
+                    <br>5-Minute Crafts<br>12,941,215 views
+                </p>
+            </div>
+        </div>
+        <div class="thumbnail">
+            <iframe src="https://www.youtube.com/embed/6vebbDZxoKE"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <div class="thumbtitle">
+                <p>
+                    <span class="thumbnailtitle">5 Min vs. 50 Min vs. 5 Hour Pasta (ft. Binging With Babish)</span>
+                    <br>Tasty&nbsp;<i class="fa fa-check-circle" aria-hidden="true"></i>
+                    <br>4,439,284 views
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    <section id="mainContainer">
+        <iframe class="video" src="https://www.youtube.com/embed/JKdTgbq8kTY"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3>How Microverse Works</h3>
+
+        <div class="aboutvideo">
+            <div id="aboutvideoleft">
+                <h5>
+                    634 views •
+                    Nov 26, 2019
+                </h5>
+            </div>
+            <div id="aboutvideoright">
+                <i class="fa fa-thumbs-up" aria-hidden="true">&nbsp;26K</i>
+                <i class="fa fa-thumbs-down" aria-hidden="true">&nbsp;720</i>
+                <button><i class="fa fa-mail-forward" aria-hidden="true">&nbsp;SHARE</i></button>
+                <i class="fa fa-bars" aria-hidden="true">&nbsp;SAVE</i>
+            </div>
+        </div>
+
+        <hr>
+
+        <div id="videodescription">
+            <div class="videodescriptionbar">
+                <div id="videoauthor">
+                    <img src="images/mverse.png" alt="">
+                    <h3>Microverse</h3>
+                </div>
+                <div id="subscribe">
+                    <button id="subscribebutton">SUBSCRIBE</button>
+                </div>
+
+            </div>
+            <p>Understand how Microverse works and it can accelerate your learning experience to become a remote
+                software developer</p>
+            <button id="showmore">SHOW MORE</button>
+        </div>
+
+        <hr>
+
+        <div class="commentssection">
+            <div class="comments">
+                <div id="txt">1 Comment</div>
+                <i class="fa fa-sort-amount-desc" aria-hidden="true">&nbsp;SORT BY</i>
+            </div>
+            <div class="comment">
+                <img src="images/Dee.jpg" alt="">
+                <input type="text" id="commentbox" placeholder="Add a public comment...">
+            </div><br>
+            <div class="comment">
+                <img src="images/profilepic.jpg" alt="">
+                <b>Paul Omondi</b>&nbsp;<span id="duration"> 1 month ago</span>
+
+            </div>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
